@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.sidebar{
+    text-decoration: none;
+    font-family:'Sorce Code Pro', monospace;
+    position: static;
+    /* height: 100vh; */
+    background-color:rgb(97, 221, 165);
+    width:10vw;
+}
+.sidebar nav{
+    padding: 20px;
+}
+.sidebar nav li{  
+
+    font-size: 25px;
+    padding: 18px 0;
+}
+.info{
+    color: red;
+    margin:120px auto;
+    background-color: rgb(37, 35, 35);
+    height: 58vh;
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+}
+ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    /* background-color:rgb(218, 97, 81); */
+  }
+a{
+
+    background-color: rgb(37, 35, 35);
+    font-family:'Sorce Code Pro', monospace;
+    font-weight: bold;
+    height: 30px;
+    width: 110px;
+    margin-top: 34px;
+    border-width: 2px;
+    border-color: rgb(136, 9, 68);
+    border-radius: 5px;
+    box-shadow: 0px 6px 6px 0px rgb(159, 36, 36);
+}
+li a {
+
+    display: block;
+    color: white;
+    padding: 8px 10px;
+    text-decoration: none;
+}
+li a:hover {
+    color: red;
+    /*background-color: rgb(212, 68, 157);*/
+    text-shadow: 0px 0px 5px 5px rgb(224, 6, 6);
+    background-color:rgb(37, 35, 35);
+    font-family:'Sorce Code Pro', monospace;
+    font-weight: bold;
+    height: 30px;
+    width: 100px;
+    margin-top: 34px;
+    border-width: 2px;
+    border-color: rgb(171, 16, 54);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 5px rgb(224, 6, 6);
+    cursor:pointer;
+}
+
+
+.main{
+    color: white;
+    height: 100%;
+    background-color: rgb(37, 35, 35);
+    width: 90vw;
+    
+}
+.container{
+    height: 716px;
+    display: flex;
+}
+
+
+
+.name{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 15px solid red;
+    /* animation: blinker 3s linear infinite; */
+    font-family:'Sorce Code Pro', monospace;
+}
+
+body {
+    height:100vh;
+    width:100vw;
+    background-color:rgb(19, 20, 22);
+    overflow:hidden;
+    font-family: Lato, "Trebuchet MS", "Verdana", "sans-serif";
+  }
+  
+  #testbutton {
+    width: 150px;
+    height:30px;
+    border-radius:180px;
+    position:relative;
+    left:calc(50% - 75px);
+    top:calc(50% - 25px);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    cursor:pointer;
+    line-height:12px;
+  }
+  
+  #testbutton:before {
+    content:'';
+    z-index:1;
+    position:absolute;
+    display:block;
+    width:80%;
+    height:70%;
+    top:15%;
+    left:10%;
+    transition: 0.3s opacity ease-in-out;
+    filter:blur(15px);
+    opacity:0;
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  }
+
+  #testbutton:hover:before {
+    opacity:1;
+    transition: 0.3s opacity ease-in-out;
+    filter:blur(25px);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);  
+  }
+
+  #testbutton :after {
+    content:'See More!';
+    text-align:center;
+    line-height:25px;
+    font-size:18px;
+    color:rgba(235,235,235,1);
+    font-weight:bold;
+    z-index:5;
+    position:absolute;
+    display:block;
+    border-radius:180px;
+    width:92%;
+    height:80%;
+    top:10%;
+    left:4%;  
+    background-color:rgb(19, 20, 22);
+    cursor:pointer;
+  }
+
+.Blogitem{
+    margin: 15px;
+    
+}
+.blogcontainer h1{
+    text-align: center;
+    margin: 15px;
+    font-family: 'Sorce Code Pro', monospace;
+}
+.Blogitem p{
+    font-family: 'Sorce Code Pro', monospace;
+}
+.Blogitem h2{
+    color:red;
+    font-family: 'Sorce Code Pro', monospace;
+}
+p{
+    margin: 15px;
+}
+
+h1{
+
+    color: red;
+}

@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.sidebar{
+    text-decoration: none;
+    font-family:'Sorce Code Pro', monospace;
+    position: static;
+    /* height: 100vh; */
+    background-color:rgb(97, 221, 165);
+    width:10vw;
+}
+.sidebar nav{
+    padding: 20px;
+}
+.sidebar nav li{  
+
+    font-size: 25px;
+    padding: 18px 0;
+}
+.info{
+    color: red;
+    margin:120px auto;
+    background-color: rgb(37, 35, 35);
+    height: 58vh;
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+}
+ul {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    /* background-color:rgb(218, 97, 81); */
+  }
+a{
+
+    background-color: rgb(37, 35, 35);
+    font-family:'Sorce Code Pro', monospace;
+    font-weight: bold;
+    height: 30px;
+    width: 110px;
+    margin-top: 34px;
+    border-width: 2px;
+    border-color: rgb(136, 9, 68);
+    border-radius: 5px;
+    box-shadow: 0px 6px 6px 0px rgb(159, 36, 36);
+}
+li a {
+
+    display: block;
+    color: white;
+    padding: 8px 10px;
+    text-decoration: none;
+}
+li a:hover {
+    color: red;
+    /*background-color: rgb(212, 68, 157);*/
+    text-shadow: 0px 0px 5px 5px rgb(224, 6, 6);
+    background-color:rgb(37, 35, 35);
+    font-family:'Sorce Code Pro', monospace;
+    font-weight: bold;
+    height: 30px;
+    width: 100px;
+    margin-top: 34px;
+    border-width: 2px;
+    border-color: rgb(171, 16, 54);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 5px rgb(224, 6, 6);
+    cursor:pointer;
+}
+/* nav li a{
+    display: block;
+    list-style: none;
+    color: black;
+    text-decoration: none; }*/
+
+.main{
+    height: 100%;
+    background-color: rgb(37, 35, 35);
+    width: 90vw;
+    
+}
+.container{
+    height: 716px;
+    display: flex;
+}
+
+.divinfo{
+    justify-content: 600px;
+    flex-direction: column;
+    display: flex;
+}
+/* .name, .hello, .buton.about{
+    text-align: left;
+} */
+.divpic img{
+    padding-left:100px;
+    width:auto;
+    padding-top: 22px;
+    height: 80vh;
+}
+.hello{
+    font-family:'Sorce Code Pro', monospace;
+    font-size: 30px;
+}
+.name{
+    animation: blinker 3s linear infinite;
+    font-family:'Sorce Code Pro', monospace;
+    font-weight: bold;
+    font-size: 50px;
+}
+.about{
+    font-family:'Sorce Code Pro', monospace;
+    font-size: 25px;
+}
+
+.buttons button{
+    background-color: rgb(20, 191, 145);
+    font-family:'Sorce Code Pro', monospace;
+    font-weight: bold;
+    height: 30px;
+    width: 100px;
+    margin-top: 34px;
+    border-width: 2px;
+    border-color: rgb(103, 17, 183);
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 5px rgb(159, 36, 36);
+    
+}
+.buttons button:hover{
+    background-color: rgb(211, 46, 156);
+    font-family:'Sorce Code Pro', monospace;
+    font-weight: bold;
+    height: 30px;
+    width: 100px;
+    margin-top: 34px;
+    border-width: 2px;
+    border-color: rgb(171, 16, 54);
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 5px rgb(34, 210, 166);
+    cursor:pointer;
+    
+}
+.thanks{
+    font-family:'Sorce Code Pro', monospace;
+    color: yellow;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.space{
+    padding-top: 20px;
+}

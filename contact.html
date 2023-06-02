@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Vijay Patil contactinfo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="contact.css">
+        
+        <script>
+            function ajaxpost () {
+            // (A) GET FORM DATA
+            var form = document.getElementById("myForm");
+            var data = new FormData(form);
+                
+            // (B) AJAX REQUEST
+            // (B1) POST DATA TO SERVER, RETURN RESPONSE AS TEXT
+            fetch("1c-server.html", { method:"POST", body:data })
+            .then(res=>res.text())
+                
+            // (B2) SHOW MESSAGE ON SERVER RESPONSE
+            .then((response) => {
+              console.log(response);
+              if (response == "OK") { alert("SUCCESSFUL!"); }
+              else { alert("FAILURE!"); }
+            })
+        
+            // (B3) OPTIONAL - HANDLE FETCH ERROR
+            .catch((err) => { console.error(err); });
+        
+            // (C) PREVENT FORM SUBMIT
+            return false;
+            }
+        </script>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="sidebar">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="intro.html">Intro</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <!-- <li><a href="cv.html">CV</a></li> -->
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+            <div class="main">
+                <div class="contactinfo">
+
+                    <form class="fm" onsubmit="return ajaxpost()">
+                        <div id="emailHelp" class="form-text">We'll never share
+                            your email and phone with anyone else.</div>
+
+                        <h1 class="name">Contact me for Enquiries</h1>
+                        <div class="name1">
+                            Name<br>
+                            <input type="text" placeholder="Enter your name" name="name" required>
+                        </div> <br>
+
+                        <div class="mb-3">
+                            <label for="clientemail" class="form-label">Email
+                                address</label><br>
+                            <input type="email" class="form-control"
+                                id="clientemail" aria-describedby="emailHelp"
+                                placeholder="Enter Email" name="email"  required>
+
+                        </div> <br>
+
+                        <div class="mb-3">
+                            <label for="clientphone" class="form-label">Phone
+                                Number</label><br>
+                            <input pattern="\d*" title="Numbers only, please." type="" class="form-control" id="clientphone"
+                                placeholder="Phone No" required>
+                        </div><br>
+                        <div class="en">Enquiries<br>
+                            <textarea rows="5" cols="100" placeholder="type Your
+                                Enquiery"></textarea>
+                        </div>
+                        <div class="mb-3-form-check">
+                            <input type="checkbox" class="form-check-input"
+                                id="exampleCheck1" required>
+                            <label class="form-check-label" for="exampleCheck1">Check
+                                me out</label><br>
+                        </div>
+                        <div class="name">
+                            <div class="buttons">
+                                <button type="submit" class="buttons"
+                                    placeholder="Submit" value="Go!" >Submit</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+    </body>
+
+
+
+</html>
